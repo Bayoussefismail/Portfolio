@@ -61,7 +61,24 @@ transition: .3s
          visibility: visible;
       }
 }
+.opacity2 {
+  visibility: hidden;
+  animation-delay: 0s;
+  -webkit-animation: opacity 1s;
+animation: opacity 3s;
+-webkit-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+transition: .3s
 
+}
+@keyframes opacity {
+  0% {  opacity: 0;
+     }
+  100% {      opacity: 1;
+       transform: none;
+         visibility: visible;
+      }
+}
 .rightanim {
   visibility: hidden;
   animation-delay: 0s;
@@ -72,7 +89,7 @@ animation-fill-mode: forwards;
 
 }
 @keyframes appearhr1 {
-   0% {         transform-style: flat;
+   0% {
      margin-left: 100%;
     width: 300%;
      opacity: 0;
@@ -97,7 +114,7 @@ animation-fill-mode: forwards;
 
 }
 @keyframes appearhr2 {
-   0% {         transform-style: flat;
+   0% {
      margin-left: 100%;
     width: 300%;
      opacity: 0;
