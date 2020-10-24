@@ -34,7 +34,7 @@
 </head>
 
 <body id="page-top">
-
+<header>
   <!--/ Nav Star /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
@@ -69,7 +69,7 @@
   <!--/ Nav End /-->
 
   <!--/ Intro Skew Star /-->
-  <div id="home" class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
+  <div id="home" class="intro route bg-image rightanim" style="background-image: url(img/intro-bg.jpg)">
     <div class="overlay-itro"></div>
     <div class="intro-content display-table">
       <div class="table-cell">
@@ -83,9 +83,9 @@
     </div>
   </div>
   <!--/ Intro Skew End /-->
-
-  <section id="about" class="about-mf sect-pt4 route">
-    <div class="container">
+  </header>
+  <section id="about" class="about-mf sect-pt4 route home-intro">
+    <div class="container sticky">
       <div class="row">
         <div class="col-sm-12">
           <div class="box-shadow-full">
@@ -478,13 +478,13 @@
             </div>
             <div class="testimonial-box">
               <div class="author-test">
-                <img src="img/testimonial-4.png" alt="" class="rounded-circle b-shadow-a">
+                <!-- <img src="img/testimonial-4.png" alt="" class="rounded-circle b-shadow-a">
                 <span class="author">Houda Mzari</span>
               </div>
               <div class="content-test">
                 <p class="description lead">
                   Web Developer, Photographer, Web designer and Marketing/SEO.
-                </p>
+                </p> -->
                 <span class="comit"><i class="fa fa-quote-right"></i></span>
               </div>
             </div>
@@ -681,9 +681,9 @@
                   </div>
                   <div class="socials">
                     <ul>
-                      <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
-                      <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
-                      <li><a href=""><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
+                      <li><a href="https://www.facebook.com/smail.bysf/" target="_blank"><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+                      <li><a href="https://www.instagram.com/smailbysf/" target="_blank"><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
+                      <li><a href="https://github.com/Bayoussefismail" target="_blank"><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
 
                     </ul>
                   </div>
@@ -704,6 +704,7 @@
   <div id="preloader"></div>
 
   <!-- JavaScript Libraries -->
+
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/popper/popper.min.js"></script>
@@ -714,6 +715,7 @@
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="lib/typed/typed.min.js"></script>
+  <script src="js/observer.js" charset="utf-8"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
 

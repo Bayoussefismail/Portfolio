@@ -42,7 +42,27 @@ a {
   border-radius: 20px;
   border: 3px solid #1e1e1e;
 }
-
+.rightanim {
+  visibility: hidden;
+  animation-delay: 0s;
+  -webkit-animation: appear1 1s;
+animation: appearhr1 3s;
+-webkit-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+animation-delay: 1s;
+}
+@keyframes appearhr1 {
+   0% {         transform-style: flat;
+     opacity: 0;
+visibility: hidden;
+          }
+   100% {       opacity: 1;
+        transform: none;
+        z-index: 10;
+      transform-origin: right;
+      visibility: visible;
+}
+}
 #LOGO {
   color: #af0404;
 }
