@@ -31,12 +31,17 @@
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+
 </head>
 
 <body id="page-top">
 <header>
   <!--/ Nav Star /-->
-  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top opacity" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll" id="LOGO" href="#page-top"><img src="img/LOGO.png" alt="">Drown Ambitions</a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
@@ -69,14 +74,14 @@
   <!--/ Nav End /-->
 
   <!--/ Intro Skew Star /-->
-  <div id="home" class="intro route bg-image rightanim" style="background-image: url(img/intro-bg.jpg)">
+  <div id="home" class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
     <div class="overlay-itro"></div>
     <div class="intro-content display-table">
       <div class="table-cell">
         <div class="container">
           <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="intro-title mb-4">I am Ismail Bayoussef</h1>
-          <p class="intro-subtitle"><span>Geomatician, Back-end Developer, Frontend Developer, Musician</span><strong></strong></p>
+          <h1 class="intro-title mb-4 sticky1">I am Ismail Bayoussef</h1>
+          <p class="intro-subtitle sticky1"><span>Geomatician, Back-end Developer, Frontend Developer, Musician</span><strong></strong></p>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
       </div>
@@ -84,7 +89,7 @@
   </div>
   <!--/ Intro Skew End /-->
   </header>
-  <section id="about" class="about-mf sect-pt4 route home-intro">
+  <section id="about" class="about-mf sect-pt4 route home-intro sticky">
     <div class="container sticky">
       <div class="row">
         <div class="col-sm-12">
@@ -158,17 +163,17 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="title-box text-center">
-            <h3 class="title-a">
+            <h3 class="title-a sticky3">
               Services
             </h3>
-            <p class="subtitle-a">
+            <p class="subtitle-a sticky3">
               The services i provide are listed below.
             </p>
             <div class="line-mf"></div>
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row sticky4">
         <div class="col-md-4">
           <div class="service-box">
             <div class="service-ico">
@@ -262,7 +267,7 @@
   </section>
   <!--/ Section Services End /-->
 
-  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
+  <div class="section-counter paralax-mf bg-image sticky5" style="background-image: url(img/counters-bg.jpg)">
     <div class="overlay-mf"></div>
     <div class="container">
       <div class="row">
@@ -320,17 +325,17 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="title-box text-center">
-            <h3 class="title-a">
+            <h3 class="title-a sticky6">
               Portfolio
             </h3>
-            <p class="subtitle-a">
+            <p class="subtitle-a sticky6">
               Down below you can check the work accomplished.
             </p>
             <div class="line-mf"></div>
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row sticky7">
         <div class="col-md-4">
           <div class="work-box">
             <a href="https://bayoussefismail.github.io/Front-End-InteriorDesign-Website" target="_blank">
@@ -458,7 +463,7 @@
   <!--/ Section Portfolio End /-->
 
   <!--/ Section Testimonials Star /-->
-  <div class="testimonials paralax-mf bg-image" style="background-image: url(img/overlay-bg.jpg)">
+  <div class="testimonials paralax-mf bg-image sticky8" style="background-image: url(img/overlay-bg.jpg)">
     <div class="overlay-mf"></div>
     <div class="container">
       <div class="row">
@@ -478,13 +483,13 @@
             </div>
             <div class="testimonial-box">
               <div class="author-test">
-                <!-- <img src="img/testimonial-4.png" alt="" class="rounded-circle b-shadow-a">
+                <img src="img/testimonial-4.png" alt="" class="rounded-circle b-shadow-a">
                 <span class="author">Houda Mzari</span>
               </div>
               <div class="content-test">
                 <p class="description lead">
                   Web Developer, Photographer, Web designer and Marketing/SEO.
-                </p> -->
+                </p>
                 <span class="comit"><i class="fa fa-quote-right"></i></span>
               </div>
             </div>
@@ -610,7 +615,7 @@
   <!--/ Section Blog End / -->
 
   <!--/ Section Contact-Footer Star /-->
-  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route sticky9" style="background-image: url(img/overlay-bg.jpg)">
     <div class="overlay-mf"></div>
     <div class="container">
       <div class="row">

@@ -1,33 +1,36 @@
-var tl = new TimelineMax({onUpdate:updatePercentage});
-var tl2 = new TimelineMax();
+
 const controller = new ScrollMagic.Controller();
 
-tl.from('div', .5, {x:200, opacity: 0});
-tl.from('span', 1, { width: 0}, "=-.5");
-tl.from('img', 1, {x:-200, opacity: 0,ease: Power4.easeInOut}, "=-1");
-tl.from('.title-s', 1, {x:200, opacity: 0, ease: Power4.easeInOut}, "=-.7");
 
-tl2.from("#box", 1, {opacity: 0, scale: 0});
-tl2.to("#box", .5, {left: "20%", scale: 1.3, borderColor: 'white', borderWidth: 12, boxShadow: '1px 1px 0px 0px rgba(0,0,0,0.09)'})
 
-const scene = new ScrollMagic.Scene({
-  triggerElement: ".sticky",
-            triggerHook: "onLeave",
-            duration: "100%"
-})
-  .setPin(".sticky")
-  .setTween(tl)
-		.addTo(controller);
-
+const scene1 = new ScrollMagic.Scene({
+  triggerElement: ".sticky"
+}).setClassToggle('.sticky', 'rightanim').addTo(controller);
 const scene2 = new ScrollMagic.Scene({
-  triggerElement: "div"
-})
-  .setTween(tl2)
-		.addTo(controller);
+  triggerElement: ".sticky1"
+}).setClassToggle('.sticky1', 'opacity').addTo(controller);
+const scene3 = new ScrollMagic.Scene({
+  triggerElement: ".sticky3"
+}).setClassToggle('.sticky3', 'opacity').addTo(controller);
+const scene4 = new ScrollMagic.Scene({
+  triggerElement: ".sticky4"
+}).setClassToggle('.sticky4', 'rightanim2').addTo(controller);
+const scene5 = new ScrollMagic.Scene({
+  triggerElement: ".sticky5"
+}).setClassToggle('.sticky5', 'rightanim2').addTo(controller);
 
+const scene6 = new ScrollMagic.Scene({
+  triggerElement: ".sticky6"
+}).setClassToggle('.sticky6', 'opacity').addTo(controller);
 
-function updatePercentage() {
-  //percent.innerHTML = (tl.progress() *100 ).toFixed();
-  tl.progress();
-  console.log(tl.progress());
-}
+const scene7 = new ScrollMagic.Scene({
+  triggerElement: ".sticky7"
+}).setClassToggle('.sticky7', 'rightanim2').addTo(controller);
+
+const scene8 = new ScrollMagic.Scene({
+  triggerElement: ".sticky8"
+}).setClassToggle('.sticky8', 'rightanim2').addTo(controller);
+
+const scene9 = new ScrollMagic.Scene({
+  triggerElement: ".sticky9"
+}).setClassToggle('.sticky9', 'rightanim2').addTo(controller);

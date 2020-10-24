@@ -12,6 +12,7 @@
 body {
   background-color: #252525;
   color: #4e4e4e;
+  overflow-x: hidden;
 }
 
 h1,
@@ -42,26 +43,110 @@ a {
   border-radius: 20px;
   border: 3px solid #1e1e1e;
 }
+.opacity {
+  visibility: hidden;
+  animation-delay: 0s;
+  -webkit-animation: opacity 1s;
+animation: opacity 3s;
+-webkit-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+transition: .3s
+
+}
+@keyframes opacity {
+  0% {  opacity: 0;
+       transform: translate3d(0,75%,0); }
+  100% {      opacity: 1;
+       transform: none;
+         visibility: visible;
+      }
+}
+
 .rightanim {
   visibility: hidden;
   animation-delay: 0s;
   -webkit-animation: appear1 1s;
-animation: appearhr1 3s;
+animation: appearhr1 1s;
 -webkit-animation-fill-mode: forwards;
 animation-fill-mode: forwards;
-animation-delay: 1s;
+
 }
 @keyframes appearhr1 {
    0% {         transform-style: flat;
+     margin-left: 100%;
+    width: 300%;
      opacity: 0;
 visibility: hidden;
           }
    100% {       opacity: 1;
-        transform: none;
+        transform: ;
         z-index: 10;
+        margin-left: 10.3%;
+    width: 100%;
       transform-origin: right;
       visibility: visible;
 }
+}
+.rightanim2 {
+  visibility: hidden;
+  animation-delay: 0s;
+  -webkit-animation: appear1 1s;
+animation: appearhr2 1s;
+-webkit-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+
+}
+@keyframes appearhr2 {
+   0% {         transform-style: flat;
+     margin-left: 100%;
+    width: 300%;
+     opacity: 0;
+visibility: hidden;
+          }
+   100% {       opacity: 1;
+        transform: ;
+        z-index: 10;
+        margin-left: 0%;
+    width: 100%;
+      transform-origin: right;
+      visibility: visible;
+}
+}
+.sticky  {
+  opacity: 0;
+  transition: .5s;
+}
+.sticky3 {
+  opacity: 0;
+  transition: .5s;
+}
+.sticky4 {
+  opacity: 0;
+  transition: .5s;
+}
+.sticky1 {
+  opacity: 0;
+  transition: .5s;
+}
+.sticky5 {
+  opacity: 0;
+  transition: .5s;
+}
+.sticky6 {
+  opacity: 0;
+  transition: .5s;
+}
+.sticky7 {
+  opacity: 0;
+  transition: .5s;
+}
+.sticky8 {
+  opacity: 0;
+  transition: .5s;
+}
+.sticky9 {
+  opacity: 0;
+  transition: .5s;
 }
 #LOGO {
   color: #af0404;
@@ -1240,6 +1325,41 @@ footer .credits a {
     background-size: cover;
     background-position: right;
       }
+      @keyframes appearhr1 {
+         0% {         transform-style: flat;
+           margin-left: 100%;
+          width: 300%;
+           opacity: 0;
+      visibility: hidden;
+                }
+         100% {       opacity: 1;
+              transform: ;
+              z-index: 10;
+              margin-left: 0%;
+          width: 100%;
+            transform-origin: right;
+            visibility: visible;
+      }
+      }
+}
+@@media (max-width: 767px) {
+  @keyframes appearhr1 {
+     0% {         transform-style: flat;
+       margin-left: 100%;
+      width: 300%;
+       opacity: 0;
+  visibility: hidden;
+            }
+     100% {       opacity: 1;
+          transform: ;
+          z-index: 10;
+          margin-left: 0%;
+      width: 100%;
+        transform-origin: right;
+        visibility: visible;
+  }
+  }
+
 }
 @media (min-width: 767px) {
   .about-mf .box-pl2 {
