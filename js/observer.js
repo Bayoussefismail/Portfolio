@@ -38,7 +38,7 @@ if(width < 768) {
   } else {
     const scene1 = new ScrollMagic.Scene({
       triggerElement: ".sticky"
-    }).setClassToggle('.sticky', 'rightanim').addTo(controller);
+    }).setClassToggle('.sticky', 'swing-in-top-bck').addTo(controller);
     const scene2 = new ScrollMagic.Scene({
       triggerElement: ".sticky1"
     }).setClassToggle('.sticky1', 'opacity').addTo(controller);
@@ -47,7 +47,7 @@ if(width < 768) {
     }).setClassToggle('.sticky3', 'opacity').addTo(controller);
     const scene4 = new ScrollMagic.Scene({
       triggerElement: ".sticky4"
-    }).setClassToggle('.sticky4', 'rightanim2').addTo(controller);
+    }).setClassToggle('.sticky4', 'tilt-in-br').addTo(controller);
     const scene5 = new ScrollMagic.Scene({
       triggerElement: ".sticky5"
     }).setClassToggle('.sticky5', 'rightanim2').addTo(controller);
@@ -58,7 +58,7 @@ if(width < 768) {
 
     const scene7 = new ScrollMagic.Scene({
       triggerElement: ".sticky7"
-    }).setClassToggle('.sticky7', 'rightanim2').addTo(controller);
+    }).setClassToggle('.sticky7', 'tilt-in-br').addTo(controller);
 
     const scene8 = new ScrollMagic.Scene({
       triggerElement: ".sticky8"
